@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- ------------------------HEADER-------------------------------------- -->
+        <header>
+            <div class="header_item">
+                <div class="header_itm1_box"> <i class="fa-solid fa-house"></i><i class="fa-solid fa-church"></i></div>
+                <a class="a1" href="#">Phone</a>
+                <a class="a2" href="#">Smart Home</a>
+                <a class="a3" href="#">Life Style</a>
+
+            </div>
+            <div class="header_item1">
+                <a href="#">Descover</a>
+                <a href="#">Support</a>
+                <i onclick="search1()" class="fa-solid fa-search"></i>
+                <i style="font-weight: normal;" class="fa-solid fa-user"></i>
+
+            </div>
+        </header>
+        <div class="login_home">
+            <p id="signuplogin">Sign in</p>
+            <div style="width: 100%; height: 1px; background-color: #999;" class="dive"></div>
+            <p id="signinlogin">Sign up</p>
+        </div>
+        <div class="phone">
+            <h1 style="font-weight: 800;">xiaomi</h1>|<h1 style="font-weight: 400; font-size: 27px;"> Redmi</h1>
+        </div>
+        <div class="smart">
+            <div class="samrt_box">
+                <i class="fa-solid fa-tv"></i>
+                <p>TV & Media</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-robot"></i>
+                <p>Vacuum Cleaner</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-blender-phone"></i>
+                <p>Enviorment Appliance</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-user"></i>
+                <p>Kitchen Apploance</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p>Illumination</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-computer"></i>
+                <p>Smart Device</p>
+            </div>
+        </div>
+        <div class="stylee">
+            <div class="samrt_box">
+                <i class="fa-solid fa-clock"></i>
+                <p>Wearable</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-bicycle"></i>
+                <p>Vehicle</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-tv"></i>
+                <p>Office</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-user"></i>
+                <p>Personal Care</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-medal"></i>
+                <p>Sport</p>
+            </div>
+            <div class="samrt_box">
+                <i class="fa-solid fa-computer"></i>
+                <p>Accessories</p>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search_item">
+                <div class="header_itm1_box"> <i class="fa-solid fa-house"></i><i class="fa-solid fa-church"></i></div>
+                <div class="search_box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="search" placeholder="Search" style="width: 85%;">
+                </div>
+            </div>
+            <div class="search_delett" onclick="searchDelete()">
+
+            </div>
+        </div>
+        <!-- ---------------------------BANNER--------------------------------------------------------- -->
+        <div class="banner">
+            <div class="banner_left">
+                <img src="img/img1.jpg" alt="img">
+            </div>
+            <div class="banner_right">
+                <h1>Learn, Relax, Thrive</h1>
+                <h2>Ease into the new school year with
+                    <br> Xiaomi's essentials!
+                </h2>
+                <button>Learn more</button>
+            </div>
+        </div>
+        <div class="banner2">
+            <div class="banner2_left">
+                <h1>Xiaomi Pad 6</h1>
+                <h2>Built for work, designed for ease</h2>
+                <button>Learn more</button>
+            </div>
+            <div class="banner2_right">
+                <img src="./img/img2.jpg" alt="img">
+            </div>
+
+        </div>
+        <div class="banner3">
+            <div class="banner3_left">
+                <h1 style="font-size: 40px;">Xiaomi 13 Pro</h1>
+                <h3>Behind the masterpiece</h3>
+                <p>Learn more ></p>
+                <img style="width: 420px; height: 180px; margin-top: 30px;" src="./img/img3.jpg" alt="img">
+            </div>
+            <div class="banner3_left">
+                <h1>Redmi Note <span style="color: red;">12</span> Pro+ <span
+                        style="border: 2px solid black; border-radius: 5px; padding: 0 10px;">5G</span></h1>
+                <h3>200MP world-leading camera with OIS | 120W HyperCharge</h3>
+                <p>Learn more ></p>
+                <img style="width: 220px; height: 220px; margin-top: 30px;" src="./img/img4.jpg" alt="">
+            </div>
+        </div>
+        <div class="banner4">
+            <div class="banner4_box">
+                <h1>Rediscover your summer</h1>
+                <p>Learn more ></p>
+            </div>
+            <div class="banner4_box1">
+                <h1>Xiaomi Electric</h1>
+                <h1>Scooter 4 Lite</h1>
+                <h3>Ride with style</h3>
+                <p>Learn more ></p>
+            </div>
+            <div class="banner4_box2">
+                <h1>Redmi Watch 3</h1>
+                <h1>Active</h1>
+                <p>Learn more ></p>
+                <img src="./img/img5.jpg" alt="img">
+            </div>
+        </div>
+        <div class="carousel_home">
+            <div class="carousel_box">
+                <div class="carousel_video">
+                    <img src="	https://i01.appmifile.com/webfile/globalimg/i18n/other/showPlayIcon.png" alt="img">
+                </div>
+                <div class="crsll">
+                    <div class="carousel">
+                        <div class="carousel_item">
+                            <img src="" alt="nomi">
+                            <h1></h1>
+                            <h1></h1>
+                            <p></p>
+                            <b></b>
+                            <div>
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------FOOTER----------------------------------------------------------------- -->
+        <footer>
+            <div class="footer_item">
+                <div class="footer_box1">
+                    <h4>SUPPORT</h4>
+                    <a href="#">Contact us</a>
+                    <a href="#">User Guide</a>
+                    <a href="#">Warranty</a>
+                    <a href="#">International Warranty</a>
+                    <a href="#">EU Declaration of Conformity</a>
+                    <a href="#">Scooter Safety Notice</a>
+                    <a href="#">Android Enterprise Recommended</a>
+                    <a href="#">Digital Services Act</a>
+                </div>
+                <div class="footer_box1">
+                    <h4>ABOUT US</h4>
+                    <a href="#">Xiaomi</a>
+                    <a href="#">Leadership Team</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Integrity & Compliance</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Sustainability</a>
+                    <a href="#">Trust Center</a>
+                    <a href="#">Xiaomi Accessibility</a>
+                    <a href="#">MIUI</a>
+                </div>
+                <div class="footer_box1">
+                    <h4>XIAOMI PROJECTS</h4>
+                    <a href="#">Xiaomi Creators</a>
+                    <a href="#">Xiaomi Studios</a>
+                    <a href="#">Xiaomi Imagery</a>
+                    <a href="#">Xiaomi Master Class</a>
+                    <a href="#">Xiaomi Renovation</a>
+                </div>
+                <div class="footer_box2">
+                    <h4>Follow Xiaomi</h4>
+                    <div class="ilar" style=" display: flex; gap: 25px;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h4>Let's stay in touch</h4>
+                    <div class="box2_box">
+                        <input type="text" placeholder="Enter email address">
+                        <i style="font-size: 25px; cursor: pointer;" class="fa-solid fa-chevron-right"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div style="width: 95%; height: 1.5px; background-color: #a9a6a6; margin: 0 auto; border-radius: 2px;">
+            </div>
+            <div class="footer_item2">
+                <div class="plar" style="display: flex; gap: 25px; color: #fff;">
+                    <b>Copyright © 2010 - 2023 Xiaomi. All Rights Reserved</b>
+                    <p>Cookie Settings</p> |
+                    <p>Cookie Policy</p>
+                    <p>Sitemap</p>
+                </div>
+                <p class="lastp" style="color: #fff; padding-right: 20px; cursor: pointer;"> Global / Global <i
+                        class="fa-solid fa-globe"></i></p>
+            </div>
+        </footer>
+    </div>
+    <div class="sign_in">
+        <img id="imgnone" src="./img/img7.jpg" alt="">
+        <div class="sign_ing_box">
+            <div class="sign_ing_box_header">
+                <h1 style="font-weight: normal; display: flex; gap: 15px;"><i class="fa-solid fa-church"></i> Xiaomi
+                    Account</h1>
+                <div class="sign_in_links">
+                    <a href="#">User Agreement</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Need help?</a> |
+                    <a href="#">Select Your Language</a>
+                </div>
+            </div>
+            <div class="sign_in_box_login">
+                <img id="sign_in_box_img1" src="./img/img8.jpg" alt="">
+                <div class="img_box_item1">
+                    <p style="color: #fff; text-align: center; font-size: 12px; margin-top: 8px;">Sxan QR code</p>
+                </div>
+                <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                    <h2 id="nonebb" style="  cursor: pointer; color: #999;">Sign in</h2>
+                    <h2 style=" cursor: pointer; border-bottom: 3px solid rgb(238, 99, 0); padding-bottom: 10px;">Sign
+                        up</h2>
+                </div>
+                <div onclick="showSelect()" class="select">
+                    <div class="btn_1s">
+                        <p style="font-size: 12px; margin-bottom: 5px; color: #666;">Region</p>
+                        <h3 style="font-weight: normal;">Uzbekistan</h3>
+                    </div>
+                    <i style="font-size: 20px; color: #666; cursor: pointer;" class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="select_children">
+                    <div class="children_input">
+                        <i class="fa-solid fa-search"></i>
+                        <input id="text_search" type="text" placeholder="Search for country on region">
+                    </div>
+                    <div class="children_item2">
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div> <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                       <div class="childern_child"><p>uzbekistan</p></div>
+                    </div>
+                </div>
+
+               
+
+
+                <input id="getva" type="text" placeholder="Email">
+                <input id="getpas" type="text" placeholder="Set password">
+                <input type="text" placeholder="Enter your password again">
+                <p style="line-height: 1.5; font-size: 14px;">Password must be 8-16 characters and include both <br>
+                    numbers and letters</p>
+                <div class="checkk">
+                    <input type="checkbox">
+                    <p style="color: #666; font-size: 14px; "> I've read and agreed to Xiaomi's <span
+                            style="color: #000;">User Agreement <br> and Privacy Policy.</span></p>
+                </div>
+                <button onclick="login22()" class="btn_main">Next</button>
+                <p style="margin-left: 130px; letter-spacing: 1px; color: rgb(255, 38, 0);">Create using a phone number
+                </p>
+            </div>
+            <div class="signin_footer">
+                <p style="margin-top: 50px; font-size: 13px; font-weight: normal; color: #666;">Xiaomi Inc., All rights
+                    reserved</p>
+            </div>
+        </div>
+    </div>
+    <div class="sign_up">
+        <img id="imgnonee" src="./img/img7.jpg" alt="">
+        <div class="sign_ing_box">
+            <div class="sign_ing_box_header">
+                <h1 style="font-weight: normal; display: flex; gap: 15px;"><i class="fa-solid fa-church"></i> Xiaomi
+                    Account</h1>
+                <div class="sign_in_links">
+                    <a href="#">User Agreement</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Need help?</a> |
+                    <a href="#">Select Your Language</a>
+                </div>
+            </div>
+            <div style="height: 570px;" class="sign_in_box_login">
+                <img id="sign_in_box_img" src="./img/img8.jpg" alt="">
+                <div class="img_box_item">
+                    <p style="color: #fff; text-align: center; font-size: 12px; margin-top: 8px;">Sxan QR code</p>
+                </div>
+                <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                    <h2 style="cursor: pointer; border-bottom: 3px solid rgb(238, 99, 0); padding-bottom: 10px;">Sign in
+                    </h2>
+                    <h2 id="noneb" style=" cursor: pointer; color: #999;">Sign up</h2>
+                </div>
+                <input id="email1" type="text" placeholder="Email/Phone/Hiome/Account">
+                <input id="password1" type="password" placeholder="Password">
+                <button onclick="login1()" class="btn_main">Sign in</button>
+                <p style=" letter-spacing: 1px; color: rgb(255, 38, 0);">Forgot password?</p>
+                <p style="text-align: center; color: #666; margin-left: 35%; font-size: 20px;">More options</p>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="signin_footer">
+                <p style="margin-top: 50px; font-size: 13px; font-weight: normal; color: #666;">Xiaomi Inc., All rights
+                    reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
